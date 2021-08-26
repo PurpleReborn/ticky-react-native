@@ -21,7 +21,7 @@ import Chat from './src/screens/Chat';
 import Notif from './src/screens/Notif';
 import EditProfile from './src/screens/EditProfile';
 import RoomChat from './src/screens/RoomChat';
-// import Splash from './src/screens/Splash';
+import Splash from './src/screens/Splash';
 
 import Header from './src/components/Header';
 import Loading from './src/components/Loading';
@@ -32,143 +32,140 @@ const App = props => {
   const {isLoading} = useSelector(state => state.globalReducer);
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        {props.auth.token === null ? (
-          <React.Fragment>
-            {/* <Stack.Screen
-          component={Splash}
-          name="splash"
-          options={{
-            header: Header,
-            headerTransparent: true,
-          }}
-        /> */}
-            <Stack.Screen
-              component={Welcome}
-              name="welcome"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={SignUp}
-              name="daftar"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Login}
-              name="login"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
+      <Stack.Navigator initialRouteName="splash">
+        <React.Fragment>
+          <Stack.Screen
+            component={Splash}
+            name="splash"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Welcome}
+            name="welcome"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={SignUp}
+            name="daftar"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Login}
+            name="login"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
 
-            <Stack.Screen
-              component={ForgotPassword}
-              name="forgot"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            <Stack.Screen
-              component={Home}
-              name="home"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Search}
-              name="search"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={SearchResult}
-              name="searchResults"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={FlightDetail}
-              name="detail"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Booking}
-              name="booking"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={BookingDetail}
-              name="bookingDetail"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Chat}
-              name="chat"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Notif}
-              name="notif"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={Profile}
-              name="profile"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={EditProfile}
-              name="editProfile"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-            <Stack.Screen
-              component={RoomChat}
-              name="roomChat"
-              options={{
-                header: Header,
-                headerTransparent: true,
-              }}
-            />
-          </React.Fragment>
-        )}
+          <Stack.Screen
+            component={ForgotPassword}
+            name="forgot"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Stack.Screen
+            component={Home}
+            name="home"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Search}
+            name="search"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={SearchResult}
+            name="searchResults"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={FlightDetail}
+            name="detail"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Booking}
+            name="booking"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={BookingDetail}
+            name="bookingDetail"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Chat}
+            name="chat"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Notif}
+            name="notif"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={Profile}
+            name="profile"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={EditProfile}
+            name="editProfile"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+          <Stack.Screen
+            component={RoomChat}
+            name="roomChat"
+            options={{
+              header: Header,
+              headerTransparent: true,
+            }}
+          />
+        </React.Fragment>
       </Stack.Navigator>
       {isLoading && <Loading />}
     </NavigationContainer>
