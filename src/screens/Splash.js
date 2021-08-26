@@ -13,9 +13,11 @@ const Splash = ({navigation}) => {
     if (token !== null) {
       setTimeout(() => {
         navigation.replace('home');
-      }, 1500);
+      }, 2000);
     } else {
-      navigation.replace('welcome');
+      setTimeout(() => {
+        navigation.replace('welcome');
+      }, 1500);
     }
   }, []);
   return (
