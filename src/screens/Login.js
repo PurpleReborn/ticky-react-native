@@ -29,23 +29,7 @@ const Login = ({navigation}) => {
   };
 
   const onSubmit = () => {
-    if (formData.email.length > 0) {
-      if (formData.password.length >= 8) {
-        dispatch(authLogin(formData, navigation));
-      } else {
-        ToastAndroid.showWithGravity(
-          'Password Must be length more than 8 Characters',
-          ToastAndroid.LONG,
-          ToastAndroid.TOP,
-        );
-      }
-    } else {
-      ToastAndroid.showWithGravity(
-        'email cannot empty',
-        ToastAndroid.LONG,
-        ToastAndroid.TOP,
-      );
-    }
+    dispatch(authLogin(formData, navigation));
   };
 
   return (

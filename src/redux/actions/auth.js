@@ -6,30 +6,55 @@ import {API_URL} from '@env';
 export const authLogin = (Data, navigation) => {
   return async dispatch => {
     console.log(Data);
-    const form = new URLSearchParams();
-    form.append('email', Data.email);
-    form.append('password', Data.password);
-    try {
-      const {data} = await http().post(
-        `${API_URL}/users/login`,
-        form.toString(),
-      );
-      dispatch({
-        type: 'AUTH_LOGIN',
-        payload: data.token,
-      });
+    if (Data.email.length < 1) {
       ToastAndroid.showWithGravity(
-        'Login Success!',
+        'Email is required',
         ToastAndroid.LONG,
         ToastAndroid.TOP,
       );
-      navigation.reset({index: 0, routes: [{name: 'home'}]});
-    } catch (err) {
-      console.log(err);
-      dispatch({
-        type: 'AUTH_LOGIN_FAILED',
-        payload: err.response.data.message,
-      });
+    } else if (!Data.email.includes('@')) {
+      ToastAndroid.showWithGravity(
+        'Invalid email format',
+        ToastAndroid.LONG,
+        ToastAndroid.TOP,
+      );
+    } else if (Data.password.length < 8) {
+      ToastAndroid.showWithGravity(
+        'Password length min is 8 characters at least',
+        ToastAndroid.LONG,
+        ToastAndroid.TOP,
+      );
+    } else {
+      const form = new URLSearchParams();
+      form.append('email', Data.email);
+      form.append('password', Data.password);
+      try {
+        const {data} = await http().post(
+          `${API_URL}/users/login`,
+          form.toString(),
+        );
+        dispatch({
+          type: 'AUTH_LOGIN',
+          payload: data.token,
+        });
+        ToastAndroid.showWithGravity(
+          'Login Success!',
+          ToastAndroid.LONG,
+          ToastAndroid.TOP,
+        );
+        navigation.reset({index: 0, routes: [{name: 'home'}]});
+      } catch (err) {
+        console.log(err);
+        dispatch({
+          type: 'AUTH_LOGIN_FAILED',
+          payload: err.response.data.message,
+        });
+        ToastAndroid.showWithGravity(
+          err.response.data.message,
+          ToastAndroid.LONG,
+          ToastAndroid.TOP,
+        );
+      }
     }
   };
 };
@@ -64,6 +89,11 @@ export const authRegister = (Data, navigation) => {
         type: 'REGISTER_FAILED',
         payload: err.response.data.message,
       });
+      ToastAndroid.showWithGravity(
+        err.response.data.message,
+        ToastAndroid.LONG,
+        ToastAndroid.TOP,
+      );
     }
   };
 };
