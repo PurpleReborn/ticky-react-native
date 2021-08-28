@@ -22,6 +22,7 @@
 3. Type `yarn install`
 4. Start running App with Type `yarn android`
 4. Add .env file at root folder project
+5. Link to add Backend for processing data (https://github.com/apaajaa22/backend-ticketapp.git)
 
 ## License
 
