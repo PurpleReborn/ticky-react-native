@@ -1,8 +1,8 @@
 <h1 align='center'>React Native - Ticky</h1>
 
-<h2>mobile application to book flight tickets</h2>
+<h2>Mobile application to book flight tickets</h2>
 
-<h3>This app using redux for state management<h3>
+<h4>This app using redux for state management<h4>
 
 <h3>available features:</h3>
 <h4>-Authentication(Sign up,Login,Profile,and Edit Profile)</h4>
