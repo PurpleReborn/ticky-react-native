@@ -38,7 +38,6 @@ class Profile extends Component {
       ToastAndroid.LONG,
       ToastAndroid.TOP,
     );
-    this.props.navigation.reset({index: 0, routes: [{name: 'welcome'}]});
   };
   render() {
     const {details} = this.props.user;

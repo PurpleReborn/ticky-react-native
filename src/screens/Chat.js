@@ -198,6 +198,7 @@ const Chat = props => {
             <View style={{flexDirection: 'row'}}>
               <FlatList
                 data={search}
+                showsHorizontalScrollIndicator={false}
                 horizontal
                 keyExtractor={item => String(item.id)}
                 renderItem={({item}) => (
@@ -396,6 +397,7 @@ const styles = StyleSheet.create({
   img: {
     width: 60,
     height: 60,
+    borderRadius: 60 / 2,
   },
   box1: {
     marginTop: 30,
