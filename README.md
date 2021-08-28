@@ -1,7 +1,3 @@
-# ticky-react-native
-
-# b22-react-native
-
 <h1 align='center'>React Native - Ticky</h1>
 
 <h2>mobile application to book flight tickets</h2>
