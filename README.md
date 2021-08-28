@@ -27,4 +27,6 @@
 ## License
 
 © [Sandi Muhamad Rizalul](https://github.com/PurpleReborn/)
- 
+© [Rahadian Reza Rizaldy](https://github.com/apaajaa22)
+© [Muhamad Fiqry Arahmansyah](https://github.com/CUPAXX)
+© [Fajar Rizky Maulana](https://github.com/acrossmindanduniverse)
