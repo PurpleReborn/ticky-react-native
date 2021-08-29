@@ -187,7 +187,9 @@ const FlightDetail = ({route, createTransaction: transaction, navigation}) => {
         <Text style={styles.facil}>Facilities</Text>
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {route.params.item_facilities.map(res => {
-            return <CardFacility name={res.facility.name} />;
+            return (
+              <CardFacility key={res.facility.id} name={res.facility.name} />
+            );
           })}
         </ScrollView>
         <View style={styles.totalWrap}>
