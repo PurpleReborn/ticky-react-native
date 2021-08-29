@@ -4,7 +4,7 @@
 
 <h4>This app using redux for state management<h4>
   <h3>Home</h3>
-  images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)
+![ss2](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)
 
 <h3>available features:</h3>
 <h4>-Authentication(Sign up,Login,Profile,and Edit Profile)</h4>
