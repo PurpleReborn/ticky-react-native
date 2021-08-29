@@ -4,7 +4,7 @@
 
 <h4>This app using redux for state management<h4>
   
-  <div style="text-align:center">
+  <div style="flex-direction:row">
    <h3>Home screen</h3>
     
      ![ss2](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)
