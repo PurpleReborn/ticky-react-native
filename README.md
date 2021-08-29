@@ -7,8 +7,8 @@
 
 
  <h3>Home screen</h3>
-    ![ss1](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)
-   
+  
+    ![ss1](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png   
       
 
 
