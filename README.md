@@ -8,20 +8,14 @@
   
     ![ss2](https://user-images.githubusercontent.com/79769140/131267106-b5a6632a-a322-42e0-b99e-7f1fcb420bf8.png) 
       
-
-
  <h3>Search Flight</h3>
   
      ![ss3](https://user-images.githubusercontent.com/79769140/131266794-6cc04c06-6a0a-4381-9c0c-2939689354bd.png)
      
-
  <h3>Chat Feature</h3>
   
-      ![ss4](https://user-images.githubusercontent.com/79769140/131266792-256bb233-3e93-4b9e-8d4c-f20be5984d5d.png)
+     ![ss4](https://user-images.githubusercontent.com/79769140/131266792-256bb233-3e93-4b9e-8d4c-f20be5984d5d.png)
      
-
-
-  
 
 <h3>available features:</h3>
 <h4>-Authentication(Sign up,Login,Profile,and Edit Profile)</h4>
