@@ -5,17 +5,24 @@
 <h4>This app using redux for state management<h4>
   
   <div style="flex-direction:row">
+    <div>
    <h3>Home screen</h3>
     
-     ![ss2](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)
-  
+     <img src="![ss2](https://user-images.githubusercontent.com/79769140/131266796-dbf4c8ad-baa5-4473-a2a6-88e8d1b65f69.png)" > 
+      
+   </div>
+   <div>
     <h3>Search Flight</h3>
   
      ![ss3](https://user-images.githubusercontent.com/79769140/131266794-6cc04c06-6a0a-4381-9c0c-2939689354bd.png)
-  
+     
+   </div>
+   <div>
     <h3>Chat Feature</h3>
   
       ![ss4](https://user-images.githubusercontent.com/79769140/131266792-256bb233-3e93-4b9e-8d4c-f20be5984d5d.png)
+     
+   </div>
   </div>
   
 
