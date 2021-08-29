@@ -5,8 +5,8 @@
 <h4>This app using redux for state management<h4>
   
  <h3>Home screen</h3>
-  
-    ![ss2](https://user-images.githubusercontent.com/79769140/131267106-b5a6632a-a322-42e0-b99e-7f1fcb420bf8.png) 
+ 
+![ss2](https://user-images.githubusercontent.com/79769140/131267106-b5a6632a-a322-42e0-b99e-7f1fcb420bf8.png)
       
  <h3>Search Flight</h3>
   
