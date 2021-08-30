@@ -4,17 +4,10 @@
 
 <h4>This app using redux for state management<h4>
   
- <h3>Home screen</h3>
- 
-![ss2](https://user-images.githubusercontent.com/79769140/131267106-b5a6632a-a322-42e0-b99e-7f1fcb420bf8.png)
-      
- <h3>Search Flight</h3>
-  
-![ss3](https://user-images.githubusercontent.com/79769140/131266794-6cc04c06-6a0a-4381-9c0c-2939689354bd.png)
-     
- <h3>Chat Feature</h3>
-  
-![ss4](https://user-images.githubusercontent.com/79769140/131266792-256bb233-3e93-4b9e-8d4c-f20be5984d5d.png)
+  # Showcase
+Welcome Screen | Home Screen | Detail Product Screen | Payment Screen
+:-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
+![Welcome Screen](https://user-images.githubusercontent.com/79769140/131267106-b5a6632a-a322-42e0-b99e-7f1fcb420bf8.png?raw=true)  |  ![Home Screen](https://user-images.githubusercontent.com/79769140/131266794-6cc04c06-6a0a-4381-9c0c-2939689354bd.png?raw=true) |  ![Product Detail](https://github.com/CUPAXX/b22-react-native/blob/master/screenshot/detail.png?raw=true) |  ![Payment Screen](https://user-images.githubusercontent.com/79769140/131266792-256bb233-3e93-4b9e-8d4c-f20be5984d5d.png?raw=true)
      
 
 <h3>available features:</h3>
